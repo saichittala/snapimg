@@ -3,4 +3,4 @@ Allow: /
 Disallow: /private/
 Disallow: /admin/
 
-Sitemap: https://snapimg.vercel.app/sitemap.xml
+Sitemap: https://snapimg.site/sitemap.xml
