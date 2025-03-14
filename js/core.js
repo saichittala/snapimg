@@ -235,3 +235,5 @@ if (!window.ImageProcessor) {
   
     document.getElementById("files-count").textContent = fileCount.toLocaleString();
     document.getElementById("size-count").textContent = formatSizeUnits(totalSizeBytes);
+
+    
