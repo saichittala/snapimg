@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/fav.png">
+
+  <title>Convert to JPG - SnapIMG</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-main">
+        <!-- Logo with Alt Text -->
+        <a href="index.html">
+          <img class="logo" src="img/logo.svg" alt="SnapIMG - Free Online Image Compression and Conversion Tool">
+        </a>
+        
+        <!-- Navigation with Keyword-Rich Anchor Text -->
+        <nav>
+          <div style="display: flex; gap: 4px;">
+            <a href="compress-images.html" class="btn-2">Compress Images</a>
+            <a href="convert-to-png.html" class="btn-2">Convert to PNG</a>
+            <a href="convert-to-jpg.html" class="btn-2">Convert JPG</a>
+            <a href="convert-to-webp.html" class="btn-2">Convert to WebP</a>
+          </div>
+        </nav>
+        
+        <!-- Login/Signup Buttons -->
+        <div style="display: flex; gap: 8px;">
+          <a class="btn-1" href="#">Login</a>
+          <a class="btn-3" href="#">Signup</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="tool-container">
+      <div class="tool-header">
+        <h1>Convert to JPG</h1>
+        <p class="heading-desc">Drag and drop your images below to convert them to JPG format</p>
+      </div>
+
+      <div class="upload-section" id="drop-zone">
+        <input type="file" id="file-input" multiple hidden>
+        <div class="upload-content">
+          <img src="img/upload.svg" alt="Upload" class="upload-icon">
+          <h3>Drag & Drop Images</h3>
+          <p>or click to browse files</p>
+          <p class="support-text">Supports: PNG, WEBP, GIF</p>
+        </div>
+      </div>
+
+      <div class="image-preview" id="preview-grid"></div>
+
+      <div class="action-bar">
+        <button class="btn-4" id="process-btn">Convert to JPG</button>
+        <button class="btn-4" id="download-btn" style="display: none;">Download</button>
+        <div class="file-counter" id="file-counter">0 files selected.</div>
+      </div>
+
+      
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress" style="width: 0%"></div>
+        </div>
+        <div class="progress-text" id="progress-text">0% Complete</div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/convert-to-jpg.js"></script>
+  <script>
+    
+  </script>
+</body>
+</html>
